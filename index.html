@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GT Forex Traders</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="logo">
+        <img src="media/gtforex.png" alt="GT Forex Traders">
+      </a>
+
+      <!-- Mobile Menu Icon -->
+      <div class="mobile-menu" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Menu Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#connect-floating">Crypto</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Login Button -->
+      <a href="pages/login.html" class="btn login-btn">Login</a>
+
+    </div>
+  </nav>
+
+
+  <section class="hero">
+  <div class="hero-container">
+    <!-- Left: Text -->
+    <div class="hero-text">
+      <h1>Learn to Trade with Confidence</h1>
+      <p>Master Forex trading and take control of your financial future with GT Forex Traders.</p>
+      <a href="pages/register.html" class="cta-btn">Get Started</a>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="hero-image">
+      <img src="media/bull.png" alt="Forex Trading">
+    </div>
+  </div>
+</section>
+
+<section class="about fade-in" id="about">
+  <div class="about-container">
+    <h2>Who We Are</h2>
+
+    <p class="about-lead">
+      GT Forex Traders is a professional trading education and crypto connection platform
+      built to help traders grow with confidence.
+    </p>
+
+    <p>
+      We provide structured Forex and crypto trading courses — from beginner fundamentals
+      to advanced strategies — while connecting users with trusted local and international
+      crypto dealers.
+    </p>
+
+    <p>
+      Our platform works exclusively with reputable brokers and regulated financial
+      institutions, ensuring a secure and transparent trading environment.
+    </p>
+
+    <ul class="about-points">
+      <li>✔ Beginner to Advanced Trading Education</li>
+      <li>✔ Local & International Crypto Dealer Connections</li>
+      <li>✔ Trusted Brokers & Financial Platforms</li>
+      <li>✔ Risk-Focused, Real-World Trading Approach</li>
+    </ul>
+
+    <a href="#courses" class="btn neon-btn">View Our Courses</a>
+  </div>
+</section>
+
+
+
+
+<section class="courses" id="courses">
+  <div class="section-header">
+    <h2>Our Courses</h2>
+    <p>Learn Forex Trading Step by Step</p>
+  </div>
+
+  <div class="courses-grid">
+    <!-- Course 1 -->
+    <div class="course-card">
+      <img src="media/forex-hero.png" alt="Beginner Forex">
+      <div class="course-content">
+        <h3>Beginner Forex Trading</h3>
+        <p>Start your journey with the basics of Forex, charts, and Brokers deposits & withdrawals.</p>
+        <a href="#register" class="course-btn">See Details</a>
+      </div>
+    </div>
+
+    <!-- Course 2 -->
+    <div class="course-card">
+      <img src="media/advance.png" alt="Advanced Trading">
+      <div class="course-content">
+        <h3>Advanced Strategies</h3>
+        <p>Learn advanced trading strategies, risk management, and technical indicators.</p>
+        <a href="#register" class="course-btn">See Details</a>
+      </div>
+    </div>
+
+    <!-- Course 3 -->
+    <div class="course-card">
+      <img src="media/analysis.jpg" alt="Market Analysis">
+      <div class="course-content">
+        <h3>Market Analysis</h3>
+        <p>Master daily market analysis and make smarter trading decisions.</p>
+        <a href="#register" class="course-btn">See Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="live-prices">
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+      "symbols": [
+        {"proName": "BINANCE:BTCUSDT","title": "BTC/USDT"},
+        {"proName": "BINANCE:ETHUSDT","title": "ETH/USDT"},
+        {"proName": "BINANCE:LTCUSDT","title": "LTC/USDT"},
+        {"proName": "BINANCE:XRPUSDT","title": "XRP/USDT"},
+        {"proName": "BINANCE:ADAUSDT","title": "ADA/USDT"},
+        {"proName": "BINANCE:DOGEUSDT","title": "DOGE/USDT"}
+      ],
+      "colorTheme": "dark",
+      "isTransparent": true,
+      "displayMode": "adaptive",
+      "locale": "en"
+    }
+    </script>
+  </div>
+</section>
+
+<section class="connect-floating">
+  <div class="connect-content">
+    <h2>Connect with Local Crypto Dealers</h2>
+    <img src="media/bitcoin.png" alt="Crypto Network" class="floating-img">
+    <a href="pages/login.html" class="btn neon-btn">See Dealers</a>
+  </div>
+</section>
+
+
+<section class="trust-section">
+  <div class="trust-container">
+    <h2>Why Traders Trust GT Forex Traders</h2>
+    <p class="trust-subtitle">
+      Built on transparency, education, and local market understanding
+    </p>
+
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon">✔</div>
+        <h4>Trusted Broker Partnerships</h4>
+        <p>We work with reputable and regulated brokers to ensure secure trading environments.</p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-icon">⏳</div>
+        <h4>Years of Market Experience</h4>
+        <p>Our team brings real-world trading experience across forex and crypto markets.</p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-icon">🌍</div>
+        <h4>Local Market Focus</h4>
+        <p>We understand regional challenges, currencies, and access to local liquidity.</p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-icon">🛡</div>
+        <h4>Transparent Risk Education</h4>
+        <p>We teach capital protection, risk management, and disciplined trading first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="analysis-section">
+  <div class="analysis-container">
+
+    <!-- Left: Text -->
+    <div class="analysis-text">
+      <h2>Live Market Analysis & Trade Insights</h2>
+      <p>
+        Learn how professional traders read price action, identify trends,
+        and manage risk using real-time market analysis.
+      </p>
+
+      <ul class="analysis-points">
+        <li>✔ Real-time chart breakdowns</li>
+        <li>✔ Smart entry & exit zones</li>
+        <li>✔ Risk-first trading approach</li>
+      </ul>
+
+      <a href="pages/login.html" class="btn neon-btn">Join Live Sessions</a>
+    </div>
+
+    <!-- Right: Chart -->
+    <div class="analysis-chart">
+      <!-- TradingView Embed (example) -->
+      <iframe
+        src="https://s.tradingview.com/widgetembed/?symbol=BTCUSDT&interval=60&theme=dark&style=1&locale=en"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="pricing" id="pricing">
+  <div class="section-header">
+    <h2>Choose Your Plan</h2>
+    <p>Pick the course that fits your trading journey</p>
+  </div>
+
+  <div class="pricing-container">
+    <!-- Beginner Plan -->
+    <div class="pricing-card">
+      <h3>Beginner</h3>
+      <p class="price">$49<span>/month</span></p>
+      <ul class="features">
+        <li>✔ Access to basic Forex lessons</li>
+        <li>✔ Market fundamentals</li>
+        <li>✔ Demo trading exercises</li>
+      </ul>
+      <a href="pages/register.html" class="btn neon-btn">Enroll Now</a>
+    </div>
+
+    <!-- Advanced Plan -->
+    <div class="pricing-card popular">
+      <h3>Advanced</h3>
+      <p class="price">$99<span>/month</span></p>
+      <ul class="features">
+        <li>✔ All Beginner features</li>
+        <li>✔ Advanced trading strategies</li>
+        <li>✔ Risk management techniques</li>
+        <li>✔ Access to live sessions</li>
+      </ul>
+      <a href="pages/register.html" class="btn neon-btn">Enroll Now</a>
+    </div>
+
+    <!-- Pro Plan -->
+    <div class="pricing-card">
+      <h3>Pro</h3>
+      <p class="price">$199<span>/month</span></p>
+      <ul class="features">
+        <li>✔ All Advanced features</li>
+        <li>✔ One-on-one mentoring</li>
+        <li>✔ Premium market analysis</li>
+        <li>✔ Exclusive community access</li>
+      </ul>
+      <a href="pages/register.html" class="btn neon-btn">Enroll Now</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="faq" id="faq">
+  <div class="section-header">
+    <h2>Frequently Asked Questions</h2>
+    <p>Answers to common Forex questions for beginners</p>
+  </div>
+
+  <div class="faq-container">
+    <!-- Question 1 -->
+    <div class="faq-item">
+      <div class="faq-question">❓ What is Forex trading?</div>
+      <div class="faq-answer">
+        Forex trading is the buying and selling of currencies to profit from exchange rate fluctuations.
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="faq-item">
+      <div class="faq-question">❓ Do I need prior experience to start?</div>
+      <div class="faq-answer">
+        No prior experience is needed. Our beginner course teaches all fundamentals step by step.
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="faq-item">
+      <div class="faq-question">❓ How much money do I need to start?</div>
+      <div class="faq-answer">
+        You can start with as little as $50 on a demo account. We teach how to scale safely.
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="faq-item">
+      <div class="faq-question">❓ Can I trade on mobile?</div>
+      <div class="faq-answer">
+        Yes! Forex trading platforms and our tutorials support mobile trading for flexibility.
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="faq-item">
+      <div class="faq-question">❓ Are Forex markets safe?</div>
+      <div class="faq-answer">
+        Forex trading carries risks, but using regulated brokers and proper risk management minimizes them.
+      </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="faq-item">
+      <div class="faq-question">❓ Will I get access to live sessions?</div>
+      <div class="faq-answer">
+        Yes! Advanced and Pro courses include live market sessions with professional traders.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="partners">
+  <div class="partners-container">
+    <h3>Our Trusted Partners</h3>
+    <div class="partners-marquee">
+      <div class="marquee-track">
+        <img src="media/exness.jpeg" alt="Broker 1">
+        <img src="media/hfm.jpg" alt="Broker 2">
+        <img src="media/bybit.jpg" alt="Payment Platform 1">
+        <img src="media/redot pay.png" alt="Payment Platform 2">
+
+        <!-- Repeat logos for seamless scroll -->
+        <img src="media/exness.jpeg" alt="Broker 1">
+        <img src="media/hfm.jpg" alt="Broker 2">
+        <img src="media/bybit.jpg" alt="Payment Platform 1">
+        <img src="media/redot pay.png" alt="Payment Platform 2">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to start trading with us? Reach out!</p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Top row: About + Quick Links -->
+    <div class="footer-top">
+      <!-- About -->
+      <div class="footer-about">
+        <h4>GT Forex Traders</h4>
+        <p>Empowering traders worldwide with trusted brokers, crypto connections, and expert trading courses.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#coaches">Coaches</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: safrazsalim1@gmail.com</p>
+        <p>Phone: +592 759 8644</p>
+        <p>Location: Georgetown, Guyana</p>
+      </div>
+    </div>
+
+    <!-- Middle row: Socials -->
+    <div class="footer-socials">
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+
+    <!-- Bottom row: Payment options -->
+  <div class="footer-payments">
+  <i class="fa-brands fa-cc-visa visa"></i>
+  <i class="fa-brands fa-cc-mastercard mastercard"></i>
+  <i class="fa-brands fa-bitcoin bitcoin"></i>
+  <i class="fa-solid fa-money-bill-wave mms"></i>
+</div>
+
+
+
+    <!-- Footer copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 GT Forex Traders. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/5927598644" target="_blank" class="whatsapp-float">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

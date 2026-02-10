@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | GT Forex Traders</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Inside <body> but before the auth section -->
+<a href="../index.html" class="home-btn">Home</a>
+
+
+<section class="auth">
+  <div class="auth-box">
+    <h2>Welcome Back</h2>
+
+   <form id="loginForm">
+  <input type="email" id="email" placeholder="Email address" required>
+  <input type="password" id="password" placeholder="Password" required>
+
+  <button class="btn neon-btn" type="submit">Login</button>
+</form>
+
+
+    <p class="auth-note">
+      Don’t have an account?
+      <a href="register.html">Create one</a>
+    </p>
+  </div>
+</section>
+
+
+
+<script type="module" src="../js/firebase.js"></script>
+<script type="module" src="../js/login.js"></script>
+
+</body>
+</html>

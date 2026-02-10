@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | GT Forex Traders</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- TradingView Ticker Tape -->
+<div class="tv-ticker">
+  <script
+    type="text/javascript"
+    src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+    async>
+  {
+    "symbols": [
+      { "proName": "FX:EURUSD", "title": "EUR/USD" },
+      { "proName": "FX:GBPUSD", "title": "GBP/USD" },
+      { "proName": "FX:USDJPY", "title": "USD/JPY" },
+      { "proName": "FX:AUDUSD", "title": "AUD/USD" },
+      { "proName": "FX:USDCAD", "title": "USD/CAD" }
+    ],
+    "showSymbolLogo": false,
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "en"
+  }
+  </script>
+</div>
+
+
+
+
+  <!-- Mobile Top Bar -->
+  <header class="mobile-topbar">
+    <button id="menuToggle" class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+    <div class="mobile-logo">
+      <img src="../media/gtforex.png" alt="GT Forex Traders Logo">
+    </div>
+  </header>
+<div class="market-sessions" id="marketSessions">
+  <span class="session asia">Asia</span>
+  <span class="session london">London</span>
+  <span class="session newyork">New York</span>
+</div>
+
+  
+
+  <!-- Dashboard Layout -->
+  <div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <img src="../media/gtforex.png" alt="GT Forex Traders Logo">
+      </div>
+      <nav>
+  <a href="#" class="active" data-page="coursesPage"><i class="fa-solid fa-graduation-cap"></i> Courses</a>
+  <a href="#" data-page="cryptoPage"><i class="fa-solid fa-chart-line"></i> Crypto Dealers</a>
+  <a href="#" data-page="session"><i class="fa-solid fa-chart-line"></i> Live Session</a>
+  <a href="#" data-page="accountPage"><i class="fa-solid fa-user"></i> Account</a>
+</nav>
+
+      <button id="logoutBtn" class="sidebar-logout">
+        <i class="fa-solid fa-right-from-bracket"></i> Logout
+      </button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-content">
+  <div class="welcome-user">
+  <h1>Welcome, <span id="userName">Trader</span></h1>
+</div>
+
+
+  <!-- Courses Page -->
+  <div class="dashboard-page" id="coursesPage">
+    <div class="dashboard-cards">
+      <!-- Courses will be injected here -->
+    </div>
+  </div>
+
+  <!-- Crypto Dealers Page -->
+  <div class="dashboard-page" id="cryptoPage" style="display:none;">
+    <h2>Crypto Dealers</h2>
+    <p>Feature coming soon</p>
+  </div>
+
+   <!-- Live session Page -->
+ <div class="dashboard-page" id="session" style="display:none;">
+  <h2>Live Session</h2>
+
+  <div class="live-session-container">
+    <!-- Live Forex Chart -->
+    <div class="live-chart" id="liveChart"></div>
+
+    
+
+    <!-- Chat Section -->
+    <div class="live-chat">
+      <h3>Chat with Traders</h3>
+      <div class="chat-messages" id="chatMessages"></div>
+      <form id="chatForm">
+        <input type="text" id="chatInput" placeholder="Type your message..." required />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+<br>
+ <!-- TradingView Forex Heatmap -->
+  <!-- Live Trading Header -->
+<div class="live-trading-header">
+  <h2>Heatmap</h2>
+</div>
+
+<div class="tradingview-forex-heatmap-container" style="width:100%; margin: 25px auto; background:#1a1a1a; border-radius:8px; padding:10px;">
+  <script
+    type="text/javascript"
+    src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js"
+    async>
+  {
+    "width": "100%",
+    "height": 350,
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "locale": "en"
+  }
+  </script>
+</div>
+
+<!-- TradingView Economic Events Ticker -->
+ <!-- Live Trading Header -->
+<div class="live-trading-header">
+  <h2>📊 Economic Impact Alerts</h2>
+</div>
+
+<div class="tradingview-economic-ticker" style="width:100%; margin:20px auto;">
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+  {
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "width": "100%",
+    "height": 400,
+    "locale": "en",
+    "importanceFilter": "high,medium"
+  }
+  </script>
+</div>
+
+  
+  <br>
+  <div class="forex-news">
+  <h3>Latest Forex News</h3>
+  <div class="tradingview-news-widget" id="tradingview_news"></div>
+  <script
+  type="text/javascript"
+  src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js"
+  async>
+{
+  "feedMode": "market",
+  "market": "forex",
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "width": "100%",
+  "height": 400,
+  "locale": "en"
+}
+</script>
+
+</div>
+</div><br>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Account Page -->
+  <div class="dashboard-page" id="accountPage" style="display:none;">
+    <h2>Your Account</h2>
+    <p>Manage your account settings here.</p>
+  </div>
+<!-- Disclaimer -->
+<div class="dashboard-disclaimer">
+  <p>
+    ⚠️ Trading involves substantial risk of loss and may not be suitable for all investors. 
+    Past performance is not indicative of future results. 
+    Use this platform at your own risk.
+  </p>
+</div>
+
+  <!-- Dashboard Footer -->
+<div class="dashboard-footer">
+  <div class="footer-content">
+    <span>© 2026 GT Forex Traders</span>
+    <span>v1.0.0</span>
+    <span id="serverStatus">Server: Online ✅</span>
+  </div>
+</div>
+
+</main>
+
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="../js/dashboard.js"></script>
+  <script src="https://s3.tradingview.com/tv.js"></script>
+<script type="module" src="../js/live-session.js"></script>
+
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-news.js">
+
+</script>
+
+
+</body>
+</html>
