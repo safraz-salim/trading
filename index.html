@@ -361,7 +361,6 @@
 </section>
 
 
-
 <section class="contact" id="contact">
   <div class="contact-container">
     <div class="section-header">
@@ -369,15 +368,34 @@
       <p>Have questions or want to start trading with us? Reach out!</p>
     </div>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <input type="text" placeholder="Subject" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
+    <form class="contact-form" id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit" class="contact-btn">Send Message</button>
     </form>
   </div>
 </section>
+<script>
+  const form = document.getElementById("contactForm");
+  const scriptURL = "https://script.google.com/macros/s/AKfycbxsYd6oSrOyYVh7faPOZRddSRteE5aHrXeqbrcQpajPZiFkUjVaJhkLxYtT9nbNgYrOIQ/exec";
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: new FormData(form)
+    })
+    .then(() => {
+      alert("Message sent successfully!");
+      form.reset();
+    })
+    .catch(() => alert("Error sending message!"));
+  });
+</script>
+
 
 
 <footer class="footer">
